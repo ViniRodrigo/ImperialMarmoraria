@@ -1,0 +1,59 @@
+body
+{
+    background-color: whitesmoke
+    
+    
+}
+
+.transicao {
+    width: 100%;
+}
+
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:space-around;
+margin: 20px;
+    padding:40px ;
+
+}
+
+.elemento{
+width:400x;
+height: 400px;
+
+
+}
+.elemento img{
+width: 300px;
+height: 300px;
+border: 3px solid rgb(150, 149, 149);
+border-radius: 10px;
+
+
+}
+
+.title{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.text1{
+    font-size: 20px;
+    text-align: center;
+    max-width: auto;
+    max-height: auto;
+
+
+}
+
+
+@media screen and (max-width:1080px)
+{
+    .elemento{ 
+        margin-bottom: 100px;
+
+    }
+}

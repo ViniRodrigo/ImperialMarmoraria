@@ -1,0 +1,47 @@
+.institucional {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 50px;
+}
+
+.banheiro1{
+   width: 350px;
+}
+
+
+.texto{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.institucional__container h1{
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.banheiro2{
+    margin-top: 30px;
+    width: 100%;
+}
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+@media(max-width: 1200px) {
+    .institucional{
+        gap: 100px;
+    }
+}
+
+@media(max-width: 900px) {
+    .institucional {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+}
