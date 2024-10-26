@@ -44,4 +44,23 @@
         gap: 0;
         align-items: center;
     }
+
+    .banheiro1 {
+       width: 80%; 
+    }
+    
+}
+
+@media(max-width: 430px) {
+    .institucional {
+        gap: 10px;
+    }
+    
+    .institucional__container h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto {
+        font-size: .8rem;
+    }
 }
