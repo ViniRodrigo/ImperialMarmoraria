@@ -90,8 +90,8 @@
     }
 
     .materiais div figure img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -99,10 +99,27 @@
     .materiais {
         padding: 80px 0;
     }
+
+    .materiais div figure img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 500px) {
+    .materiais div figure img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media(max-width: 400px) {
     .materiais > figure {
         width: 80%;
+    }
+
+    .materiais div figure img {
+        width: 100px;
+        height: 100px;
     }
 }
