@@ -99,13 +99,13 @@
 .projetos h2 {
     font-family: var(--fonte-principal);
     font-weight: 700;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .projetos p {
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .projetos h3 {
@@ -114,4 +114,66 @@
     font-size: 46px;
 
     text-align: center;
+}
+
+@media(max-width: 1500px) {
+    .projetos > div {
+        overflow-x: auto;
+        justify-content: flex-start;
+
+        padding-bottom: 5px;
+    }
+
+    .projetos > div::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .projetos > div::-webkit-scrollbar-track {
+        background: rgb(230, 230, 230);
+        border-radius: 20px;
+
+        cursor: pointer;
+    }
+      
+    .projetos > div::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 20px;
+        
+        cursor: pointer;
+    }
+    
+    .projetos > div > div {
+        min-width: 400px;
+    }
+}
+
+@media(max-width: 900px) {
+    .projetos h1 {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 500px) {
+    .projetos h1 {
+        font-size: 50px;
+    }
+
+    .projetos > div > div {
+        min-width: 300px;
+        height: 500px;
+    }
+
+    .projetos h2 {
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .projetos p {
+        font-size: 18px;
+    }
+
+    .projetos h3 {
+        font-size: 23px;
+    }
 }
