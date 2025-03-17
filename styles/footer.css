@@ -1,62 +1,107 @@
-.container-pai {
-    display: flex;
-    border: 1px solid black;
-    width: 100%;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../assets/img footer.jpg");
+footer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 10% repeat(3, 1fr);
+
+    gap: 40px;
+    padding: 80px;
+
+    background-image: url(../assets/img\ footer.jpg);
     background-repeat: no-repeat;
-    margin-top: 5em;
+    background-size: cover;
 }
 
-.container-pai h2 {
-    color: white;
-}
-
-.container1 {
-    width: 25%;
-    margin-top: 60px;
-    margin-left: 150px;
-    margin-bottom: 50px;
-}
-
-.container1 img {
-    padding-top: 10px;
-}
-
-/* //////////////////////////////// */
-
-.container2 {
-    width: 25%;
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
-
-.alinhamento {
+footer > div {
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    
+    gap: 20px;
 }
 
-.alinhamento img {
+footer > div:first-of-type img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div ul li {
+    display: flex;
+    gap: 10px;
+}
+
+footer img {
     width: 20px;
     height: 20px;
 }
 
-.alinhamento p {
-    margin: 0;
-    margin-left: 5px;
+footer h1 {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 26px;
+
     color: white;
 }
 
-.container3 {
-    width: 25%;
-    margin-top: 60px;
-    margin-bottom: 50px;
+footer p {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+
+    color: white;
 }
 
-.container4 {
-    width: 25%;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    margin-right: 150px;
+@media(max-width: 1000px) {
+    footer {
+        grid-template-areas:
+            "a a a"
+            "b c d";
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer > div:first-of-type {
+        grid-area: a;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    footer > div:nth-of-type(2) {
+        grid-area: b;
+    }
+
+    footer > div:nth-of-type(3) {
+        grid-area: c;
+    }
+
+    footer > div:nth-of-type(4) {
+        grid-area: d;
+    }
+}
+
+@media(max-width: 800px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer > div {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 500px) {
+    footer {
+        padding: 80px 30px;
+    }
+    
+    footer > div {
+        width: 100%;
+        margin: 0;
+    }
 }
